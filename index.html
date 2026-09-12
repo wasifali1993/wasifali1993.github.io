@@ -11,6 +11,8 @@
   * { box-sizing:border-box }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif }
   main { max-width:760px; margin:0 auto; padding:3rem 1.25rem 4rem }
+  header { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap }
+  header img { width:120px; height:120px; border-radius:50%; object-fit:cover; flex:none }
   header h1 { margin:0; font-size:2.25rem; letter-spacing:-.02em }
   header p { margin:.25rem 0 0; color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:.08em; font-size:.9rem }
   nav { margin-top:.75rem; font-size:.95rem }
@@ -32,12 +34,15 @@
 <body>
 <main>
   <header>
+    <img src="photo.png" alt="Wasif Tufail" width="120" height="120">
+    <div>
     <h1>Wasif Tufail</h1>
     <p>Senior Rails Developer</p>
     <nav>
       <a href="https://github.com/wasifali1993">GitHub</a>
       <a href="javascript:print()">Print / PDF</a>
     </nav>
+    </div>
   </header>
 
   <h2>Summary</h2>
