@@ -29,7 +29,7 @@
   .hero h1 { margin:0; font-size:clamp(2.2rem,6vw,3.4rem); letter-spacing:-.03em; line-height:1.05;
              background:linear-gradient(90deg,#fff,var(--accent)); -webkit-background-clip:text; background-clip:text; color:transparent }
   .hero p { margin:.4rem 0 0; color:var(--accent2); font-weight:600; text-transform:uppercase; letter-spacing:.14em; font-size:.85rem }
-  nav { margin-top:1rem; font-size:.95rem; display:flex; flex-wrap:wrap; gap:.25rem 1.25rem } nav a { color:var(--muted) } nav a:hover { color:var(--ink) }
+  nav { margin-top:.6rem; font-size:.95rem; display:flex; flex-wrap:wrap; gap:.25rem 1.25rem; color:var(--muted) } nav a { color:var(--muted) } nav a:hover { color:var(--ink) }
 
   h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.18em; color:var(--accent); margin:3rem 0 1rem }
   b { color:var(--ink); font-weight:600 }
@@ -55,7 +55,7 @@
   @media (prefers-reduced-motion:reduce) { .bg i { animation:none } .card { transition:none } }
   @media print {
     @page { size:A4; margin:14mm 16mm }
-    html,body { background:#fff; color:#111; font-size:10.5pt } .bg, nav { display:none }
+    html,body { background:#fff; color:#111; font-size:10.5pt } .bg, .dl { display:none } nav { font-size:9.5pt; color:#444; margin-top:.35rem } nav a { color:#222; text-decoration:none }
     main { padding:0; max-width:none; perspective:none } .hero { margin-bottom:1rem; gap:1.25rem } .hero h1 { color:#111; background:none; font-size:26pt } .hero img { box-shadow:none; width:90px; height:90px; border:3px solid #1b3a5c }
     .card { border:0; padding:0 0 .4rem; margin-bottom:.6rem; box-shadow:none; backdrop-filter:none; color:#222 }
     .card, .card > * { transform:none!important } article.card { break-inside:avoid } .card header, .card h3, h2 { break-after:avoid }
@@ -73,8 +73,15 @@
       <h1>Wasif Tufail</h1>
       <p>Senior Software Engineer · Ruby on Rails</p>
       <nav>
+        <a href="mailto:aliwasif93@gmail.com">aliwasif93@gmail.com</a>
+        <a href="mailto:wasif@happytenant.ae">wasif@happytenant.ae</a>
+        <a href="tel:+923237979346">+92 323 7979346</a>
+        <span>Lahore, Pakistan</span>
+      </nav>
+      <nav>
+        <a href="https://www.linkedin.com/in/wasif-tufail-59844886/">LinkedIn</a>
         <a href="https://github.com/wasifali1993">GitHub</a>
-        <a href="Wasif_Tufail_CV.pdf">Download PDF</a>
+        <a href="Wasif_Tufail_CV.pdf" class="dl">Download PDF</a>
       </nav>
     </div>
   </header>
