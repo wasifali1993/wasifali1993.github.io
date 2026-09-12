@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wasif Tufail — Senior Ruby on Rails Developer</title>
-<meta name="description" content="Wasif Tufail — Senior Ruby on Rails developer with 6+ years building multi-tenant SaaS, APIs and integrations.">
+<title>Wasif Tufail — Senior Software Engineer (Ruby on Rails)</title>
+<meta name="description" content="Wasif Tufail — Senior Software Engineer with 7+ years of experience building multi-tenant SaaS in Ruby on Rails, APIs and third-party integrations.">
 <style>
-  :root { --bg:#0b1020; --ink:#e6ebf5; --muted:#9aa7c2; --accent:#7cc4ff; --accent2:#b28dff; --card:rgba(255,255,255,.05); --edge:rgba(255,255,255,.12) }
+  :root { --bg:#0b1020; --ink:#e6ebf5; --muted:#9aa7c2; --accent:#7cc4ff; --accent2:#b28dff; --card:rgba(255,255,255,.05); --edge:rgba(255,255,255,.12); --body:#c9d3e8 }
   * { box-sizing:border-box }
   html { background:var(--bg) }
   body { margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; overflow-x:hidden }
@@ -21,7 +21,7 @@
   @keyframes drift { from { transform:rotateX(var(--rx,35deg)) rotateY(-15deg) translateZ(-120px) }
                      to   { transform:rotateX(var(--rx,35deg)) rotateY(15deg) translateZ(40px) translateY(-40px) } }
 
-  main { max-width:820px; margin:0 auto; padding:3.5rem 1.25rem 5rem; perspective:1200px }
+  main { max-width:860px; margin:0 auto; padding:3.5rem 1.25rem 5rem; perspective:1200px }
 
   header.hero { display:flex; align-items:center; gap:2rem; flex-wrap:wrap; margin-bottom:3rem; transform-style:preserve-3d }
   .hero img { width:150px; height:150px; border-radius:50%; object-fit:cover; flex:none; transform:translateZ(60px);
@@ -29,30 +29,35 @@
   .hero h1 { margin:0; font-size:clamp(2.2rem,6vw,3.4rem); letter-spacing:-.03em; line-height:1.05;
              background:linear-gradient(90deg,#fff,var(--accent)); -webkit-background-clip:text; background-clip:text; color:transparent }
   .hero p { margin:.4rem 0 0; color:var(--accent2); font-weight:600; text-transform:uppercase; letter-spacing:.14em; font-size:.85rem }
-  nav { margin-top:1rem; font-size:.95rem } nav a { color:var(--muted); margin-right:1.25rem } nav a:hover { color:var(--ink) }
+  nav { margin-top:1rem; font-size:.95rem; display:flex; flex-wrap:wrap; gap:.25rem 1.25rem } nav a { color:var(--muted) } nav a:hover { color:var(--ink) }
 
   h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.18em; color:var(--accent); margin:3rem 0 1rem }
+  b { color:var(--ink); font-weight:600 }
 
   /* tilting cards */
   .card { position:relative; background:var(--card); border:1px solid var(--edge); border-radius:18px; padding:1.4rem 1.6rem; margin-bottom:1.25rem;
           transform-style:preserve-3d; transform:rotateX(var(--tx,0)) rotateY(var(--ty,0)); transition:transform .15s ease-out, box-shadow .3s;
-          box-shadow:0 20px 50px -30px rgba(0,0,0,.9); backdrop-filter:blur(8px) }
+          box-shadow:0 20px 50px -30px rgba(0,0,0,.9); backdrop-filter:blur(8px); color:var(--body) }
   .card:hover { box-shadow:0 40px 80px -30px rgba(124,196,255,.35) }
   .card > * { transform:translateZ(20px) }
-  .card header { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.25rem 1rem }
-  .card h3 { margin:0; font-size:1.15rem } .when { color:var(--muted); font-size:.95rem; white-space:nowrap }
+  .card header { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.25rem 1rem; align-items:baseline }
+  .card h3 { margin:0; font-size:1.15rem; color:var(--ink) } .card h3 small { color:var(--muted); font-weight:400; font-size:.9rem }
+  .when { color:var(--muted); font-size:.95rem; white-space:nowrap }
   .role { color:var(--accent2); margin:0 0 .6rem; font-size:.95rem }
-  ul { margin:.25rem 0 0; padding-left:1.15rem } li { margin:.3rem 0; color:#c9d3e8 }
-  dl { display:grid; grid-template-columns:max-content 1fr; gap:.5rem 1.5rem; margin:0 }
-  dt { font-weight:600; color:var(--ink) } dd { margin:0; color:#c9d3e8 }
-  @media (max-width:520px) { dl { grid-template-columns:1fr } dd { margin-bottom:.5rem } }
+  .card p { margin:0 } .card p + p { margin-top:.35rem }
+  ul { margin:.5rem 0 0; padding-left:1.15rem } li { margin:.35rem 0 }
+  dl { display:grid; grid-template-columns:max-content 1fr; gap:.55rem 1.5rem; margin:0 }
+  dt { font-weight:600; color:var(--ink) } dd { margin:0 }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:.2rem 1rem; margin:.5rem 0 }
+  .meta dt { font-weight:600 } .meta a { color:var(--accent) }
+  @media (max-width:520px) { dl, .meta { grid-template-columns:1fr } dd { margin-bottom:.4rem } }
 
   @media (prefers-reduced-motion:reduce) { .bg i { animation:none } .card { transition:none } }
   @media print {
     html,body { background:#fff; color:#111 } .bg, nav { display:none }
-    main { padding:0; max-width:none } .hero h1 { color:#111; background:none } .hero img { box-shadow:none; width:110px; height:110px }
-    .card { border:0; padding:0 0 .5rem; box-shadow:none; transform:none!important; backdrop-filter:none; break-inside:avoid }
-    li, dd { color:#222 } h2 { color:#333; margin-top:1.4rem } .role { color:#444 }
+    main { padding:0; max-width:none } .hero { margin-bottom:1.5rem } .hero h1 { color:#111; background:none } .hero img { box-shadow:none; width:100px; height:100px }
+    .card { border:0; padding:0 0 .5rem; box-shadow:none; transform:none!important; backdrop-filter:none; break-inside:avoid; color:#222 }
+    .card h3, dt, b { color:#111 } h2 { color:#333; margin-top:1.4rem; border-bottom:1px solid #ccc; padding-bottom:.25rem } .role { color:#444 } .meta a { color:#111 }
   }
 </style>
 </head>
@@ -63,7 +68,7 @@
     <img src="photo.png" alt="Wasif Tufail" width="150" height="150">
     <div>
       <h1>Wasif Tufail</h1>
-      <p>Senior Ruby on Rails Developer</p>
+      <p>Senior Software Engineer · Ruby on Rails</p>
       <nav>
         <a href="https://github.com/wasifali1993">GitHub</a>
         <a href="javascript:print()">Print / PDF</a>
@@ -73,71 +78,137 @@
 
   <h2>Summary</h2>
   <section class="card">
-    <p style="margin:0">Full-stack Ruby on Rails developer with 6+ years of experience, the last 4 on a large multi-tenant property-management SaaS used across the UAE and Qatar. I own features end to end — schema and background jobs through to Hotwire UI — and care most about shipping correct, well-tested work that solves the actual business problem. Comfortable with payments, accounting integrations, data migrations and the messy edges of real customer data.</p>
+    <p>Senior Software Engineer with <b>7+ years of experience</b> specialising in <b>Ruby on Rails, PostgreSQL, Hotwire and API design</b>, including <b>5+ years at HappyTenant</b> building a large-scale <b>multi-tenant property-management SaaS</b> for the UAE and Qatar markets. Expert in modelling complex business domains — leasing, invoicing, maintenance, inventory — and shipping them end to end: schema, background processing, third-party integrations and UI. Strong track record in <b>payment gateways, accounting integrations, large-scale data migrations</b> and <b>mobile APIs</b>, with a focus on correctness, test coverage and maintainable modular architecture.</p>
   </section>
-
-  <h2>Work Experience</h2>
-
-  <article class="card">
-    <header><h3>Happy Tenant</h3><span class="when">2021 – Present</span></header>
-    <p class="role">Senior Rails Developer · Dubai</p>
-    <ul>
-      <li>Core developer on a multi-tenant Rails platform (leases, invoicing, work orders, tenant/landlord/vendor portals) with 2,000+ commits merged; modularised the codebase into Packwerk packs with enforced boundaries.</li>
-      <li>Built a drag-and-drop PDF template builder with per-module autofills (leases, invoices, work orders, tenants) so companies design their own contracts and statements without developer involvement.</li>
-      <li>Designed and shipped a parts-inventory module — SKUs, stock lines, unit-of-measure, consumption strategies and stock allocation from work orders — plus bulk import/undo.</li>
-      <li>Led large customer data migrations (leases, invoices, tenants, documents) from legacy systems, writing idempotent import services with per-record skip/error reporting and rollback jobs.</li>
-      <li>Integrated payment gateways (Stripe, Telr, UAE direct debit), accounting (QuickBooks, Xero), listing portals (Bayut, Dubizzle, Property Finder), Twilio SMS, Mailgun and Firebase/Firestore sync for the mobile app.</li>
-      <li>Built JSON/Grape APIs for the iOS/Android apps, Pundit-based role permissions with approval workflows, and Sidekiq background pipelines for invoicing schedules and notifications.</li>
-      <li>Exposed a read-only, tenant-isolated MCP server (OAuth 2.1 via Doorkeeper) so staff can query their own data with Claude.</li>
-      <li>Frontend in Hotwire (Turbo Frames/Streams), Stimulus, Tailwind, Slim and ViewComponent; system tests with Capybara.</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <header><h3>AALI Solutions</h3><span class="when">2020 – 2021</span></header>
-    <p class="role">Mid-Level Rails Developer</p>
-    <ul>
-      <li>Back-end development on client Rails applications with a focus on data integrity and security.</li>
-      <li>Designed and built REST APIs consumed by mobile apps, including authentication and versioning.</li>
-      <li>Integrated third-party services (Google, Stripe, Tap payments, Firebase).</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <header><h3>Coder Plus</h3><span class="when">2018 – 2019</span></header>
-    <p class="role">Junior Rails Developer</p>
-    <ul>
-      <li>Full-stack work on Rails 4 applications: models, controllers, and HTML/JavaScript/AJAX front-ends.</li>
-      <li>Implemented authentication and social login with Devise and OmniAuth (Facebook, Twitter, LinkedIn).</li>
-      <li>Worked across several projects and roles to meet delivery deadlines.</li>
-    </ul>
-  </article>
 
   <h2>Skills</h2>
   <section class="card">
     <dl>
       <dt>Languages</dt><dd>Ruby, JavaScript, SQL, HTML, CSS</dd>
-      <dt>Backend</dt><dd>Rails 7, Sidekiq, Grape, Pundit, Devise/OmniAuth, Doorkeeper, PaperTrail, Packwerk, Ransack, pg_search</dd>
-      <dt>Frontend</dt><dd>Hotwire (Turbo, Stimulus), Tailwind CSS, Slim, ViewComponent, jQuery</dd>
-      <dt>Data</dt><dd>PostgreSQL, MongoDB (Mongoid), Redis, Firebase/Firestore</dd>
-      <dt>Integrations</dt><dd>Stripe, Telr, Direct Debit, QuickBooks, Xero, Twilio, Mailgun, Google OAuth, OpenAI, Bayut / Property Finder</dd>
-      <dt>Testing &amp; Tooling</dt><dd>Minitest, Capybara/Selenium, Git &amp; GitHub PR workflow, StandardRB/RuboCop, CI</dd>
+      <dt>Frameworks</dt><dd>Ruby on Rails 7, Hotwire (Turbo, Stimulus), Grape, Sidekiq, jQuery</dd>
+      <dt>Architecture</dt><dd>Multi-tenancy, modular monolith (Packwerk), REST &amp; JSON APIs, service objects, background job pipelines, MCP servers</dd>
+      <dt>Data</dt><dd>PostgreSQL, MongoDB (Mongoid), Redis, Firebase / Firestore, full-text search (pg_search), Ransack</dd>
+      <dt>Auth &amp; Security</dt><dd>Devise, OmniAuth, Doorkeeper (OAuth 2.1), Pundit policies, approval workflows, audit trails (PaperTrail)</dd>
+      <dt>Integrations</dt><dd>Stripe, Telr, UAE Direct Debit, QuickBooks, Xero, Twilio, Mailgun, Google OAuth, OpenAI / VAPI, Bayut, Dubizzle, Property Finder</dd>
+      <dt>Frontend</dt><dd>Tailwind CSS, Slim, ViewComponent, Polaris, Import maps, responsive design</dd>
+      <dt>Testing &amp; DevOps</dt><dd>Minitest, Capybara / Selenium, CI, StandardRB / RuboCop, AppSignal, Git &amp; GitHub PR workflow</dd>
+      <dt>Methodologies</dt><dd>Agile / Scrum, code review, conventional commits, feature-branch workflow</dd>
+      <dt>Tools</dt><dd>GitHub, Jira, Slack, Postman, VS Code, Claude Code</dd>
     </dl>
   </section>
 
+  <h2>Experience</h2>
+
+  <article class="card">
+    <header><h3>Senior Software Engineer <small>(Dubai – Remote)</small></h3><span class="when">HappyTenant · 2021 – Present</span></header>
+    <ul>
+      <li>Core backend engineer on a <b>multi-tenant property-management platform</b> (leases, invoicing, work orders, tenant / landlord / vendor / agent portals) serving companies across the UAE and Qatar; <b>2,000+ commits</b> merged to production.</li>
+      <li>Designed and delivered a <b>PDF template builder</b> with per-module autofills for leases, invoices, work orders and tenants, letting customers produce their own contracts and statements with no developer involvement.</li>
+      <li>Built a complete <b>parts-inventory module</b> — SKUs, stock lines, units of measure, consumption strategies and automatic stock allocation from work orders — including bulk import with undo.</li>
+      <li>Led <b>large-scale customer data migrations</b> (leases, invoices, tenants, documents) from legacy systems, writing idempotent import services with per-record skip / error reporting and rollback jobs.</li>
+      <li>Integrated <b>payment gateways</b> (Stripe, Telr, UAE Direct Debit), <b>accounting</b> (QuickBooks, Xero), <b>listing portals</b> (Bayut, Dubizzle, Property Finder), Twilio SMS, Mailgun and <b>Firebase / Firestore</b> sync for the mobile apps.</li>
+      <li>Built the <b>JSON / Grape APIs</b> powering the iOS and Android apps, <b>Pundit-based role permissions</b> with hierarchical approval workflows, and <b>Sidekiq</b> pipelines for invoice schedules and notifications.</li>
+      <li>Shipped a read-only, tenant-isolated <b>MCP server</b> (OAuth 2.1 via Doorkeeper) so customers can query their own data safely from Claude.</li>
+      <li>Modularised the monolith into <b>Packwerk packs</b> with enforced dependency boundaries, and modernised the frontend to <b>Hotwire, Stimulus, Tailwind and ViewComponent</b>.</li>
+      <li>Own production incidents end to end: triage in AppSignal, root-cause fix, regression test, PR review and release.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <header><h3>Mid-Level Rails Developer <small>(Lahore)</small></h3><span class="when">AALI Solutions · 2020 – 2021</span></header>
+    <ul>
+      <li>Backend development on client <b>Ruby on Rails</b> applications with a focus on data integrity, security and maintainability.</li>
+      <li>Designed and built <b>REST APIs</b> consumed by mobile apps, including authentication and versioning.</li>
+      <li>Integrated third-party services — <b>Google, Stripe, Tap Payments, Firebase</b>.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <header><h3>Junior Rails Developer <small>(Lahore)</small></h3><span class="when">Coder Plus · 2018 – 2019</span></header>
+    <ul>
+      <li>Full-stack work on <b>Rails 4</b> applications: models, controllers and HTML / JavaScript / AJAX front-ends.</li>
+      <li>Implemented authentication and social login with <b>Devise and OmniAuth</b> (Facebook, Twitter, LinkedIn).</li>
+      <li>Worked across several projects and roles to meet delivery deadlines.</li>
+    </ul>
+  </article>
+
+  <h2>Projects</h2>
+
+  <article class="card">
+    <h3>HappyTenant</h3>
+    <dl class="meta">
+      <dt>Role</dt><dd>Senior Backend Engineer</dd>
+      <dt>Technologies</dt><dd>Ruby on Rails, PostgreSQL, MongoDB, Redis, Sidekiq, Hotwire, Grape, Packwerk, Firebase, Stripe, QuickBooks, Xero</dd>
+      <dt>Website</dt><dd><a href="https://happytenant.io/">https://happytenant.io/</a></dd>
+    </dl>
+    <ul>
+      <li>Property-management SaaS covering the full landlord–tenant lifecycle: listings and leads, leases and renewals, invoicing and collections, maintenance work orders, snag lists, bookings and accounting.</li>
+      <li>Multi-tenant by company with subdomain routing, five distinct user portals (staff, tenant, landlord, vendor, agent) and a super-admin analytics layer.</li>
+      <li>Companion iOS / Android apps driven by the JSON API and Firestore sync; documents generated through the in-house PDF builder.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>PDF Template Builder</h3>
+    <dl class="meta">
+      <dt>Role</dt><dd>Lead Developer</dd>
+      <dt>Technologies</dt><dd>Rails, Stimulus, Turbo Frames, PDF generation, custom-field engine</dd>
+    </dl>
+    <ul>
+      <li>Drag-and-drop designer where companies build contracts, statements and work-order reports from module-aware placeholders (lease, invoice, tenant, work order, purchase cost breakdowns).</li>
+      <li>Autofill engine resolves nested records, custom fields, attachments and computed totals at render time; templates are versioned per company.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Parts Inventory &amp; Work Orders</h3>
+    <dl class="meta">
+      <dt>Role</dt><dd>Lead Developer</dd>
+      <dt>Technologies</dt><dd>Rails, PostgreSQL, Sidekiq, Turbo Streams</dd>
+    </dl>
+    <ul>
+      <li>Inventory items with SKUs, stock lines by location, units of measure and configurable consumption method (FIFO / first-available) per company.</li>
+      <li>Work-order parts consume stock transactionally, track cost categories (labour, cash and credit purchases) and record resolution times for SLA reporting.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Legacy Data Migration Toolkit</h3>
+    <dl class="meta">
+      <dt>Role</dt><dd>Developer</dd>
+      <dt>Technologies</dt><dd>Rails, ActiveJob / Sidekiq, CSV / Excel parsing</dd>
+    </dl>
+    <ul>
+      <li>Import services for leases, invoices, tenants, documents and inventory from competitor systems, with field-mapping presets per source, existing-record detection and per-row skip reasons.</li>
+      <li>Undo jobs roll back an entire import transactionally; success metrics surface new vs. existing vs. skipped records to the operator.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>HappyTenant MCP Server</h3>
+    <dl class="meta">
+      <dt>Role</dt><dd>Developer</dd>
+      <dt>Technologies</dt><dd>Rails, Doorkeeper (OAuth 2.1), Model Context Protocol</dd>
+    </dl>
+    <ul>
+      <li>Remote MCP endpoint exposing <code>describe_table</code> and <code>run_query</code> tools; every query is validated as read-only and scoped to the authenticated company's tenant.</li>
+      <li>Lets customers connect Claude to their own data via a custom connector without touching production write paths.</li>
+    </ul>
+  </article>
+
   <h2>Education</h2>
   <article class="card">
-    <header><h3>Govt College University (GCU), Lahore</h3><span class="when">2012 – 2016</span></header>
-    <p class="role" style="margin:0">Bachelor of Computer Science (BSCS)</p>
+    <header><h3>Bachelor of Computer Science (BSCS)</h3><span class="when">2012 – 2016</span></header>
+    <p class="role">Government College University (GCU), Lahore</p>
   </article>
   <article class="card">
-    <header><h3>Govt Science College, Lahore</h3><span class="when">2010 – 2012</span></header>
-    <p class="role" style="margin:0">Intermediate in Computer Science</p>
+    <header><h3>Intermediate in Computer Science</h3><span class="when">2010 – 2012</span></header>
+    <p class="role">Government Science College, Lahore</p>
   </article>
 
   <h2>Languages &amp; Interests</h2>
   <section class="card">
-    <p style="margin:0"><strong>English, Urdu.</strong> Web &amp; AI, badminton, cricket.</p>
+    <p><b>English, Urdu.</b> Web &amp; AI, badminton, cricket.</p>
   </section>
 </main>
 
@@ -147,7 +218,7 @@
     document.querySelectorAll('.card').forEach(c => {
       c.addEventListener('pointermove', e => {
         const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
-        c.style.setProperty('--ty', x * 8 + 'deg'); c.style.setProperty('--tx', -y * 8 + 'deg');
+        c.style.setProperty('--ty', x * 6 + 'deg'); c.style.setProperty('--tx', -y * 6 + 'deg');
       });
       c.addEventListener('pointerleave', () => { c.style.removeProperty('--tx'); c.style.removeProperty('--ty'); });
     });
