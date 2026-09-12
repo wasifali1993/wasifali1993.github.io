@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wasif Tufail — CV</title>
+<style>
+  @page { size:A4; margin:0 }
+  * { box-sizing:border-box; margin:0; padding:0 }
+  html, body { background:#fff }
+  body { font:9.6pt/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif; color:#333 }
+  .page { width:210mm; min-height:297mm; display:flex; margin:0 auto }
+  aside { width:66mm; background:#1c3a5e; color:#fff; padding:11mm 7mm 8mm; font-size:9pt }
+  main { flex:1; padding:12mm 9mm 8mm 9mm }
+
+  .photo { display:block; width:38mm; height:38mm; border-radius:50%; object-fit:cover; margin:0 auto 6mm; border:2.5mm solid #1e6fd9; box-shadow:0 0 0 1.2mm #fff }
+  aside h2 { font-size:11pt; letter-spacing:.18em; text-transform:uppercase; margin:5mm 0 1.5mm; padding-bottom:1.5mm; border-bottom:.6mm solid #fff; display:inline-block; padding-right:8mm }
+  aside h2:first-of-type { margin-top:0 }
+  aside .item { margin:2.5mm 0 } aside .when { font-weight:700; letter-spacing:.04em } aside .where { font-weight:700; text-transform:uppercase; font-size:9pt }
+  aside ul { list-style:disc; padding-left:4mm; margin-top:1mm } aside li { margin:.8mm 0 }
+  aside .contact li { list-style:none; word-break:break-all } aside .contact a { color:#fff; text-decoration:none }
+  aside .skills li b { font-weight:700 }
+
+  .name { font-size:30pt; letter-spacing:.02em; color:#1c3a5e; line-height:1 } .name b { font-weight:800 }
+  .title { font-size:14pt; letter-spacing:.06em; color:#1c3a5e; margin-top:2mm; text-transform:uppercase }
+  .bar { width:32mm; height:1.2mm; background:#1c3a5e; margin:3mm 0 5mm }
+  main h2 { font-size:12.5pt; letter-spacing:.14em; text-transform:uppercase; color:#1c3a5e; padding-bottom:1.5mm; border-bottom:.5mm solid #1c3a5e; margin:5mm 0 2.5mm }
+  main h2:first-of-type { margin-top:0 }
+  .summary { text-align:justify }
+
+  .job { position:relative; padding-left:7mm; margin-bottom:3mm }
+  .jobs { border-left:.5mm solid #1c3a5e; margin-left:1mm }
+  .job::before { content:""; position:absolute; left:-1.7mm; top:1.6mm; width:2.8mm; height:2.8mm; border-radius:50%; background:#1c3a5e }
+  .job header { display:flex; justify-content:space-between; align-items:baseline }
+  .job h3 { font-size:10.5pt; color:#111 } .job .when { color:#555; letter-spacing:.04em; font-size:9pt }
+  .job .role { color:#444; margin-bottom:1.5mm }
+  .job ul { padding-left:4.5mm } .job li { margin:.9mm 0; text-align:justify }
+
+  .interests { display:flex; flex-wrap:wrap; gap:2mm 12mm; font-weight:700; color:#333 }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside>
+    <img class="photo" src="photo.png" alt="Wasif Tufail">
+
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li><a href="mailto:aliwasif93@gmail.com">aliwasif93@gmail.com</a></li>
+      <li><a href="mailto:wasif@happytenant.ae">wasif@happytenant.ae</a></li>
+      <li><a href="tel:+923237979346">+92 323 7979346</a></li>
+      <li>Lahore, Pakistan</li>
+      <li><a href="https://www.linkedin.com/in/wasif-tufail-59844886/">linkedin.com/in/wasif-tufail</a></li>
+      <li><a href="https://github.com/wasifali1993">github.com/wasifali1993</a></li>
+      <li><a href="https://wasifali1993.github.io/">wasifali1993.github.io</a></li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="item">
+      <div class="when">2012 – 2016</div>
+      <div class="where">Govt College University (GCU), Lahore</div>
+      <ul><li>Bachelor of Computer Science (BSCS)</li></ul>
+    </div>
+    <div class="item">
+      <div class="when">2010 – 2012</div>
+      <div class="where">Govt Science College, Lahore</div>
+      <ul><li>Intermediate in Computer Science</li></ul>
+    </div>
+
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li><b>Languages:</b> Ruby, JavaScript, SQL, HTML, CSS</li>
+      <li><b>Frameworks:</b> Rails 7, Hotwire (Turbo, Stimulus), Grape, Sidekiq, Tailwind CSS</li>
+      <li><b>Gems:</b> Devise, OmniAuth, Doorkeeper, Pundit, Packwerk, PaperTrail, Ransack, pg_search</li>
+      <li><b>Databases:</b> PostgreSQL, MongoDB, Redis</li>
+      <li><b>Integrations:</b> Stripe, Telr, Direct Debit, QuickBooks, Xero, Twilio, Mailgun, Firebase, OpenAI</li>
+      <li><b>Testing &amp; Tools:</b> Minitest, Capybara, Git / GitHub, CI, AppSignal, Jira</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul><li>English</li><li>Urdu</li></ul>
+
+  </aside>
+
+  <main>
+    <div class="name"><b>WASIF</b> TUFAIL</div>
+    <div class="title">Senior Rails Developer</div>
+    <div class="bar"></div>
+
+    <h2>Summary</h2>
+    <p class="summary">Senior Ruby on Rails developer with 7+ years of experience, including 5+ years at HappyTenant building a large multi-tenant property-management SaaS for the UAE and Qatar. I own features end to end — data model, background jobs, integrations and UI — and focus on solving the real business problem with correct, well-tested code and a near-zero bug count.</p>
+
+    <h2>Work Experience</h2>
+    <div class="jobs">
+      <div class="job">
+        <header><h3>HappyTenant</h3><span class="when">2021 – PRESENT</span></header>
+        <div class="role">Senior Rails Developer</div>
+        <ul>
+          <li>Core backend engineer on a multi-tenant platform (leases, invoicing, work orders, tenant / landlord / vendor portals); 2,000+ commits merged to production.</li>
+          <li>Designed and led the PDF template builder with per-module autofills, letting companies produce their own contracts and statements.</li>
+          <li>Built the parts-inventory module: SKUs, stock lines, units of measure, consumption strategies and stock allocation from work orders.</li>
+          <li>Led large customer data migrations (leases, invoices, tenants, documents) with idempotent import services, skip / error reporting and rollback jobs.</li>
+          <li>Integrated Stripe, Telr and UAE direct debit payments, QuickBooks / Xero accounting, listing portals, Twilio, Mailgun and Firestore sync for the mobile apps.</li>
+          <li>Built the JSON / Grape APIs for the iOS and Android apps, Pundit role permissions with approval workflows, Sidekiq pipelines, and a tenant-isolated MCP server.</li>
+          <li>Modularised the monolith into Packwerk packs and modernised the frontend to Hotwire, Stimulus, Tailwind and ViewComponent.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <header><h3>AALI Solutions</h3><span class="when">2020 – 2021</span></header>
+        <div class="role">Mid Level Rails Developer</div>
+        <ul>
+          <li>Back-end development on client Rails applications with a focus on data integrity and security.</li>
+          <li>Designed and built REST APIs consumed by mobile apps.</li>
+          <li>Integrated Google, Stripe, Tap Payments and Firebase.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <header><h3>Coder Plus</h3><span class="when">2018 – 2019</span></header>
+        <div class="role">Junior Rails Developer</div>
+        <ul>
+          <li>Full-stack work on Rails 4 applications with HTML, JavaScript, AJAX and JSON.</li>
+          <li>Implemented authentication and social login with Devise and OmniAuth (Facebook, Twitter, LinkedIn).</li>
+          <li>Multi-tasked across projects and roles to meet deadlines.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Interests &amp; Hobbies</h2>
+    <div class="interests"><span>Web &amp; Artificial Intelligence</span><span>Badminton</span><span>Cricket</span></div>
+  </main>
+</div>
+</body>
+</html>
