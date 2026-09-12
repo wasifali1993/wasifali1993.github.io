@@ -54,10 +54,13 @@
 
   @media (prefers-reduced-motion:reduce) { .bg i { animation:none } .card { transition:none } }
   @media print {
-    html,body { background:#fff; color:#111 } .bg, nav { display:none }
-    main { padding:0; max-width:none } .hero { margin-bottom:1.5rem } .hero h1 { color:#111; background:none } .hero img { box-shadow:none; width:100px; height:100px }
-    .card { border:0; padding:0 0 .5rem; box-shadow:none; transform:none!important; backdrop-filter:none; break-inside:avoid; color:#222 }
-    .card h3, dt, b { color:#111 } h2 { color:#333; margin-top:1.4rem; border-bottom:1px solid #ccc; padding-bottom:.25rem } .role { color:#444 } .meta a { color:#111 }
+    @page { size:A4; margin:14mm 16mm }
+    html,body { background:#fff; color:#111; font-size:10.5pt } .bg, nav { display:none }
+    main { padding:0; max-width:none; perspective:none } .hero { margin-bottom:1rem; gap:1.25rem } .hero h1 { color:#111; background:none; font-size:26pt } .hero img { box-shadow:none; width:90px; height:90px; border:3px solid #1b3a5c }
+    .card { border:0; padding:0 0 .4rem; margin-bottom:.6rem; box-shadow:none; backdrop-filter:none; color:#222 }
+    .card, .card > * { transform:none!important } article.card { break-inside:avoid } .card header, .card h3, h2 { break-after:avoid }
+    .card h3, dt, b { color:#111 } h2 { color:#333; margin:1.2rem 0 .6rem; border-bottom:1px solid #ccc; padding-bottom:.2rem } .role { color:#444 } .meta a { color:#111 } .when { color:#555 }
+    main > :last-child { margin-bottom:0 }
   }
 </style>
 </head>
@@ -71,7 +74,7 @@
       <p>Senior Software Engineer · Ruby on Rails</p>
       <nav>
         <a href="https://github.com/wasifali1993">GitHub</a>
-        <a href="javascript:print()">Print / PDF</a>
+        <a href="Wasif_Tufail_CV.pdf">Download PDF</a>
       </nav>
     </div>
   </header>
